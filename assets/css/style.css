@@ -1,0 +1,38 @@
+body{
+    background-image: url(../images/thumb-1920-557051.jpg);
+}
+#titleLogo{
+    width: 300px;
+    height: 190px;
+    float: left;
+    margin-left: 420px;
+}
+#trivia{
+    width: 300px;
+    margin-top: 50px;
+    float: left;
+}
+.container{
+    background-color: #f4cf5b;
+    height: 400px;
+    width: 700px;
+    clear: both;
+    margin: auto;
+}
+#startButton{
+    margin-left: 200px;
+    margin-top: 150px;
+    height: 50px;
+    width: 300px;
+}
+#startButton:hover{
+    background-color: purple;
+}
+#timer{
+    font-size: 30px;
+    text-align: center;
+}
+#questionUno{
+    font-size: 30px;
+    text-align: center;
+}
