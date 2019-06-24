@@ -1,27 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="./assets/javascript/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./assets/javascript/javascript.js"></script>
+
 </head>
+
 <body>
-    <div id="title"><img id="titleLogo" src="./assets/images/9fbe67d744206ad7d4b06d53d4b55511_zelda-logo-zelda-logo-clipart_900-675.png" alt=""></div>
-    <div><img id="trivia" src="./assets/images/Trivia.png" alt=""></div>
+    <audio id="laMusic" src="./assets/Music/Zelda & Chill.mp3"></audio>
+    <div id="imageBanner">
+        <div id="anotherBanner">
+        <div id="title"><img id="titleLogo"
+                src="./assets/images/9fbe67d744206ad7d4b06d53d4b55511_zelda-logo-zelda-logo-clipart_900-675.png" alt="">
+        </div>
+        <div><img id="trivia" src="./assets/images/Trivia.png" alt=""></div>
+    </div>
+    </div>
     <div class="container">
-    
-        <button id="startButton">Start!</button>
-        <div id="timer"><span id="timer1"></span></div>
-        <div id="questionUno"><span id="question1"></span></div>
-        <div class="options">
-            
+        <button onclick="startGame()" id="startButton">Start!</button>
+        <div id="timer"><span id="timeRemain"></span><span id="timer1"></span></div>
+        <div id="timer"><span id="timeRemain2"></span><span id="timer2"></span></div>
+        <div id="question1">
+            <p id="question1Text"></p>
+        </div>
+        <div id="answerOptions">
+            <div onclick="wrongAns1()" class="options" id="1990"></div>
+            <div onclick="wrongAns1()" class="options" id="1970"></div>
+            <div onclick="correctAns1()" class="options" id="1986"></div>
+            <div onclick="wrongAns1()" class="options" id="1981"></div>
+            <div onclick="wrongAns2()" class="options" id="Sheik"></div>
+            <div onclick="wrongAns2()" class="options" id="Zelda"></div>
+            <div onclick="correctAns2()" class="options" id="Link"></div>
+            <div onclick="wrongAns2()" class="options" id="Goron"></div>
+            <div onclick="wrongAns3()" class="options" id="Power"></div>
+            <div onclick="correctAns3()" class="options" id="Courage"></div>
+            <div onclick="wrongAns3()" class="options" id="Wisdom"></div>
+            <div onclick="wrongAns3()" class="options" id="Magic"></div>
+            <div onclick="wrongAns4()" class="options" id="OcarinaofTime"></div>
+            <div onclick="wrongAns4()" class="options" id="SkywardSword"></div>
+            <div onclick="wrongAns4()" class="options" id="WindWaker"></div>
+            <div onclick="correctAns4()" class="options" id="BreathoftheWild"></div>
+        </div>
+
+        <div id="results">
+            <span id="correct"></span>
+            <br>
+            <span id="incorrect"></span>
+
 
         </div>
 
-     </div>    
-        
+
+
+    </div>
+
+
+
+
+
+
+
+
+
 </body>
+
 </html>
